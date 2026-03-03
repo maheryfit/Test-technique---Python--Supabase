@@ -1,0 +1,82 @@
+# ==========================================
+# SÉCURITÉ & VARIABLES D'ENVIRONNEMENT
+# ==========================================
+# C'est le point le plus critique. Ne commitez JAMAIS vos clés Supabase réelles.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# (Note : .env.example DOIT être versionné, on ne l'ignore donc pas)
+
+# ==========================================
+# BACKEND : PYTHON (Scripts)
+# ==========================================
+# Fichiers compilés et cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+.env_python/
+
+# Outils de distribution Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# FRONTEND : REACT / NEXT.JS
+# ==========================================
+# Dépendances (doivent être générées via npm install / yarn install)
+node_modules/
+/.pnp
+.pnp.js
+
+# Fichiers de build et de log
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# ==========================================
+# SUPABASE (Local)
+# ==========================================
+# Si vous utilisez la CLI Supabase en local, elle génère un dossier caché.
+# Attention : ne mettez PAS 'supabase/' (sans point) car vous devez versionner vos migrations SQL !
+.supabase/
+
+# ==========================================
+# OS & IDE (Système et Editeurs)
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
