@@ -2,9 +2,16 @@ import csv
 import os
 from supabase import create_client, Client
 
-from db_connect import get_supabase_client
+from db_connect import get_supabase_client, get_connection_postgres
 
 supabase = get_supabase_client()
+
+def get_agent_id_as_dictionary() -> dict:
+    response = supabase.table('profiles').select('id, firstname, lastname').execute()
+    agent_dict = {}
+    for agent in response.data:
+        agent_dict[agent['firstname'] + ' ' + agent['lastname']] = agent['id']
+    return agent_dict
 
 def validate_row(row: dict) -> tuple[bool, str]:
     """
@@ -21,15 +28,15 @@ def validate_row(row: dict) -> tuple[bool, str]:
     
     # 2. Validation de la ville (non vide)
     if not city:
-        return False, "La ville est vide"
+        return False, f"La ville est vide pour le bien {title}"
     
     # 3. Validation du prix (doit être un nombre > 0)
     try:
         price = float(price_str)
         if price <= 0:
-            return False, f"Prix invalide ou négatif ({price})"
+            return False, f"Prix invalide ou négatif ({price}) pour le bien {title} de l'agent {row['agent_id']}"
     except ValueError:
-        return False, f"Format de prix invalide ('{price_str}')"
+        return False, f"Format de prix invalide ('{price_str}') pour le bien {title} de l'agent {row['agent_id']}"
         
     # Si toutes les vérifications passent
     return True, ""
@@ -47,10 +54,21 @@ def import_csv(filepath: str) -> None:
     }
     rejections = []
 
+    agents_id_dict = get_agent_id_as_dictionary()
+
     try:
         with open(filepath, mode='r', encoding='utf-8') as file:
             reader = csv.DictReader(file)
-            
+            conn = get_connection_postgres()
+            cur = conn.cursor()
+            query = """
+                INSERT INTO properties (title, price, city, agent_id, is_published)
+                VALUES (%s, %s, %s, %s, %s)
+                ON CONFLICT (title, city) DO UPDATE SET
+                price = EXCLUDED.price,
+                agent_id = EXCLUDED.agent_id,
+                is_published = EXCLUDED.is_published
+            """
             for row in reader:
                 stats["total"] += 1
                 
@@ -68,19 +86,23 @@ def import_csv(filepath: str) -> None:
                     "title": row['title'].strip(),
                     "price": float(row['price']),
                     "city": row['city'].strip(),
-                    "agent_id": row['agent_id'].strip(),
+                    "agent_id": agents_id_dict.get(row['agent_id'].strip()),
                     "is_published": str(row.get('is_published', '')).strip().lower() in ['true', '1', 'yes']
                 }
                 
                 # 3. Insertion via l'API Supabase
                 try:
-                    # Note technique : Supabase REST API intercepte l'insertion.
-                    supabase.table('properties').insert(payload).execute()
+                    
+                    cur.execute(query, (payload['title'], payload['price'], payload['city'], payload['agent_id'], payload['is_published']))
+                    conn.commit()
                     stats["inserted"] += 1
                 except Exception as e:
+                    conn.rollback()
                     stats["rejected"] += 1
                     rejections.append(f"Ligne {stats['total']} rejetée (Erreur API) : {str(e)}")
 
+            cur.close()
+            conn.close()
     except FileNotFoundError:
         print(f"Erreur critique : Le fichier {filepath} est introuvable.")
         return
@@ -97,5 +119,4 @@ def import_csv(filepath: str) -> None:
             print(f"- {r}")
 
 if __name__ == "__main__":
-    # Assurez-vous que le dossier 'data' et le fichier existent
     import_csv("data/biens.csv")

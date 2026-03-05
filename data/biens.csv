@@ -1,51 +1,51 @@
 title,price,city,agent_id,is_published
-Superbe Villa avec piscine,750000,Cannes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Appartement Lumineux Centre,250000,Lyon,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Maison de ville atypique,320000,Bordeaux,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Studio étudiant proche fac,85000,Toulouse,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Appart Paris,-500,Paris,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Loft industriel rénové,410000,Nantes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Chalet en bois massif,550000,Chamonix,3df9e78c-dd21-40da-a7eb-6522f0599560,false
-Maison familiale avec jardin,290000,Rennes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-T2,120000,Marseille,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Duplex vue mer,680000,Nice,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Appartement T3 balcons,210000,Montpellier,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Villa contemporaine 300m2,,Aix-en-Provence,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Ferme à rénover,95000,Limoges,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Maison bourgeoise,480000,Tours,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Penthouse de luxe,1200000,Paris,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Maison mitoyenne,180000,,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Appartement rez-de-jardin,165000,Angers,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Studio cosy hypercentre,90000,Dijon,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Propriété équestre,850000,Deauville,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-T4 spacieux traversant,275000,Grenoble,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Appartement terrasse plein sud,310000,Toulon,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Maison d'architecte vue lac,920000,Annecy,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Terrain constructible,0,Avignon,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Grand Appartement Familial,400000,Strasbourg,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Grand Appartement Familial,400000,Strasbourg,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Immeuble de rapport,600000,Lille,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Manoir normand,1500000,Rouen,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Studio meublé,75000,Poitiers,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Villa standing piscine,820000,Biarritz,3df9e78c-dd21-40da-a7eb-6522f0599560,false
-Appartement à rénover,-10000,Brest,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-T3 avec garage,195000,Clermont-Ferrand,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Maison de pêcheur,240000,Saint-Malo,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Appartement haussmannien,890000,Paris,3df9e78c-dd21-40da-a7eb-6522f0599560,false
-Bastide provençale,740000,Aix-en-Provence,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Maisonnette de charme,110000,Perpignan,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Appartement dernier étage,340000,Nîmes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-T5 duplex avec cour,295000,Metz,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Château historique,2500000,Blois,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Appartement vue cathédrale,220000,Amiens,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Box de garage,25000,Lyon,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Local commercial,180000,,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Maison de village avec patio,210000,Avignon,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Villa californienne,950000,Cannes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-T1 bis rénové,105000,Toulouse,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Appartement rez-de-chaussée,140000,Bordeaux,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Maison de maître avec parc,880000,Nancy,3df9e78c-dd21-40da-a7eb-6522f0599560,false
-Studio cabine au ski,65000,La Plagne,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,true
-Appartement moderne éco-quartier,260000,Strasbourg,3df9e78c-dd21-40da-a7eb-6522f0599560,true
-Longère bretonne,190000,Vannes,c470f61d-13f5-4dbe-8b3c-7f08cc8e6d11,false
-Domaine viticole avec bastide,3200000,Saint-Emilion,3df9e78c-dd21-40da-a7eb-6522f0599560,true
+Superbe Villa avec piscine,750000,Cannes,John Doe,true
+Appartement Lumineux Centre,250000,Lyon,Jane Doe,true
+Maison de ville atypique,320000,Bordeaux,John Doe,false
+Studio étudiant proche fac,85000,Toulouse,Jane Doe,true
+Appart Paris,-500,Paris,John Doe,true
+Loft industriel rénové,410000,Nantes,John Doe,true
+Chalet en bois massif,550000,Chamonix,Jane Doe,false
+Maison familiale avec jardin,290000,Rennes,John Doe,true
+T2,120000,Marseille,Jane Doe,true
+Duplex vue mer,680000,Nice,John Doe,true
+Appartement T3 balcons,210000,Montpellier,Jane Doe,true
+Villa contemporaine 300m2,,Aix-en-Provence,John Doe,false
+Ferme à rénover,95000,Limoges,John Doe,true
+Maison bourgeoise,480000,Tours,Jane Doe,true
+Penthouse de luxe,1200000,Paris,John Doe,true
+Maison mitoyenne,180000,,Jane Doe,true
+Appartement rez-de-jardin,165000,Angers,John Doe,false
+Studio cosy hypercentre,90000,Dijon,Jane Doe,true
+Propriété équestre,850000,Deauville,John Doe,false
+T4 spacieux traversant,275000,Grenoble,Jane Doe,true
+Appartement terrasse plein sud,310000,Toulon,John Doe,true
+Maison d'architecte vue lac,920000,Annecy,Jane Doe,true
+Terrain constructible,0,Avignon,John Doe,false
+Grand Appartement Familial,400000,Strasbourg,John Doe,true
+Grand Appartement Familial,400000,Strasbourg,Jane Doe,true
+Immeuble de rapport,600000,Lille,John Doe,false
+Manoir normand,1500000,Rouen,Jane Doe,true
+Studio meublé,75000,Poitiers,John Doe,true
+Villa standing piscine,820000,Biarritz,Jane Doe,false
+Appartement à rénover,-10000,Brest,John Doe,true
+T3 avec garage,195000,Clermont-Ferrand,Jane Doe,true
+Maison de pêcheur,240000,Saint-Malo,John Doe,true
+Appartement haussmannien,890000,Paris,Jane Doe,false
+Bastide provençale,740000,Aix-en-Provence,John Doe,true
+Maisonnette de charme,110000,Perpignan,Jane Doe,true
+Appartement dernier étage,340000,Nîmes,John Doe,false
+T5 duplex avec cour,295000,Metz,Jane Doe,true
+Château historique,2500000,Blois,John Doe,true
+Appartement vue cathédrale,220000,Amiens,Jane Doe,true
+Box de garage,25000,Lyon,John Doe,false
+Local commercial,180000,,Jane Doe,true
+Maison de village avec patio,210000,Avignon,John Doe,true
+Villa californienne,950000,Cannes,John Doe,false
+T1 bis rénové,105000,Toulouse,Jane Doe,true
+Appartement rez-de-chaussée,140000,Bordeaux,John Doe,true
+Maison de maître avec parc,880000,Nancy,Jane Doe,false
+Studio cabine au ski,65000,La Plagne,John Doe,true
+Appartement moderne éco-quartier,260000,Strasbourg,Jane Doe,true
+Longère bretonne,190000,Vannes,John Doe,false
+Domaine viticole avec bastide,3200000,Saint-Emilion,Jane Doe,true
